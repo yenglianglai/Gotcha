@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block content %}
+<table class="table table-hover table-dark">
+	<tr>
+		<th>Date</th>
+		<th>Cano</th>
+		<th>Amount</th>
+	</tr>
+
+	{% for case in fraud_case %}
+
+	{% if case.fraud_label == 1 %}
+	<tr class="alert alert-danger" role="alert">
+		{% else %}
+	<tr class="alert alert-success" role="alert">
+		{% endif %}
+		<td>{{ case.date_created }}</td>
+		<td>{{ case.bank_id }}</td>
+		<td>{{ case.amount }}</td>
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}
