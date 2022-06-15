@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from flask import render_template, request
-from GotchaAPP import db, clf, app
+from GotchaAPP import db, clf, app, maps
 from GotchaAPP import Fraud
 from google.cloud import bigtable
 import google.cloud.bigtable.row_filters as row_filters
@@ -9,7 +9,7 @@ import google.cloud.bigtable.row_filters as row_filters
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('home.html', maps=maps)
 
 
 @app.route('/predict', methods=['POST'])

@@ -9,6 +9,29 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 db = SQLAlchemy(app)
 
+maps = {
+    "Country": {
+        "104": "Taiwan",
+        "38": "Spain",
+        "46": "Japan",
+        "75": "Korea",
+        "102": "India",
+        "52": "Brazil"
+    },
+    "Coin": {
+        "62": "NTD",
+        "61": "USD",
+        "60": "JPY",
+        "71": "Russian Ruble",
+        "26": "RMB"
+    },
+    "Store": {
+        "54238.0": "s1",
+        "54828.0": "s2",
+        "55807.0": "s3"
+    }
+}
+
 
 class Fraud(db.Model):
     id = db.Column(db.Integer, primary_key=True)

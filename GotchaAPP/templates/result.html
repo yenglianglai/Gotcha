@@ -7,80 +7,38 @@ Result
 {% block content %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <div class="container">
-	<!-- <div class="row" style="justify-content: space-around;"> -->
-	<!-- <div class="col-sm-" style="padding-top:50px;; height:20vh; width:30vw">
-			<canvas id="myChart" aspectRatio="1">
-				<script>
-					const labels = [
-						'January',
-						'February',
-						'March',
-						'April',
-						'May',
-						'June',
-					];
-
-					const data = {
-						labels: labels,
-						datasets: [{
-							label: '成功偵測之盜刷筆數',
-							backgroundColor: 'rgb(7, 186, 32)',
-							borderColor: 'rgb(225, 247, 228)',
-							data: [0, 10, 5, 2, 20, 30, 45],
-						}]
-					};
-
-					const config = {
-						type: 'line',
-						data: data,
-						options: {}
-					};
-				</script>
-
-				<script>
-					const myChart = new Chart(
-						document.getElementById('myChart'),
-						config
-					);
-				</script>
-			</canvas>
+	<div class="col">
+		<div class="row">
+			<div class="col-md-6">
+				<div style="margin-bottom: 5px" class="card text-center bg-dark">
+					<div class="card-body">
+						<h5 class="card-title">Title</h5>
+						<button type="button" class="btn btn-outline-danger" style="margin-bottom: 5px"
+							data-toggle="modal" w>
+							Sell this Item
+						</button>
+						<p class="card-text"><strong>
+								This item costs
+							</strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div style="margin-bottom: 5px" class="card text-center bg-dark">
+					<div class="card-body">
+						<h5 class="card-title">Title</h5>
+						<button type="button" class="btn btn-outline-danger" style="margin-bottom: 5px"
+							data-toggle="modal" w>
+							Sell this Item
+						</button>
+						<p class="card-text"><strong>
+								This item costs
+							</strong></p>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-sm-">
-			<canvas id="myChart1">
-				<script>
-
-					const data1 = {
-						labels: [
-							'新台幣',
-							'美元',
-							'人民幣'
-						],
-						datasets: [{
-							data: [50, 30, 20],
-							backgroundColor: [
-								'rgb(131, 252, 148)',
-								'rgb(121, 237, 237)',
-								'rgb(255, 61, 72)'
-							],
-							hoverOffset: 4
-						}]
-					};
-
-					const config1 = {
-						type: 'doughnut',
-						data: data1,
-					};
-				</script>
-
-				<script>
-					const myChart1 = new Chart(
-						document.getElementById('myChart1'),
-						config1
-					);
-				</script>
-			</canvas>
-		</div>
-	</div> -->
+	</div>
 
 	<div class="row">
 		<div class="container-fluid">
